@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head class="header">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+
+    <title>Meu Portifolio</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <nav class="navbar">
+      <div class="logo-container"></div>
+      <button class="menu-toggle" aria-label="Abrir Menu">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="#sobre" class="active">Sobre Mim</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </head>
+
+  <body>
+    <section class="zona1">
+      <div class="imagem">
+        <img src="./image/banner.jpg" alt="banner" class="banner" />
+      </div>
+      <div>
+        <h4 class="title-section">-- Sobre mim</h4>
+        <h2 class="title-intro">Construindo do Front ao Back</h2>
+        <h3 class="subtitle">Historia e Formação</h3>
+        <p class="paragraph">
+          Olá! Eu sou o Paulo Henrique, Bacharel em Sistemas de Informação pela
+          Universidade Federal do Piauí (UFPI). Durante a graduação, tive o
+          privilégio de integrar o PAVIC-UFPI - o Laboratório de Pesquisas
+          Avançadas em Visão e Inteligência Computacional - onde pude explorar
+          tecnologias inovadoras e aprofundar meus conhecimentos em computação.
+          Sou apaixonado por transformar ideias em soluções criativas, e estou
+          sempre em busca de novos desafios que me façam crescer como
+          desenvolvedor e como pessoa. Seja no Front-end, Back-end ou lidando
+          com inteligência computacional, estou pronto para encarar o próximo
+          projeto com energia e entusiasmo!
+        </p>
+      </div>
+    </section>
+    <section class="zona2">
+      <h4 class="title-section2">-- Projetos</h4>
+      <div>
+        <h3 class="text-zona2">Destaques da Minha Trajetória</h3>
+        <div class="paineis">
+          <card class="cardPainel">
+            <a href="" class="teste">
+              <h4 class="tituloCard">Projeto TB</h4>
+              <p class="paragrafoCard">
+                Projeto voltado ao auxílio no tratamento da tuberculose,
+                oferecendo um site e um aplicativo para o acompanhamento
+                integrado entre médico e paciente.
+              </p>
+            </a>
+          </card>
+          <card class="cardPainel">
+            <a href="" class="teste">
+              <h4 class="tituloCard">Projeto Pizzaria-Veneza</h4>
+              <p class="paragrafoCard">
+                Aplicativo de pizzaria desenvolvido para a conclusão da
+                disciplina de PDSI (Projeto e Desenvolvimento de Sistemas de
+                Informação) no último semestre da faculdade.
+              </p>
+            </a>
+          </card>
+          <card class="cardPainel">
+            <a href="" class="teste">
+              <h4 class="tituloCard">Projeto DATASSP</h4>
+              <p class="paragrafoCard">
+                Projeto para visualização de dados sobre segurança pública no
+                estado do Piauí, com atuação como colaborador bolsista após a
+                graduação.
+              </p>
+            </a>
+          </card>
+          <card class="cardPainel">
+            <a href="" class="teste">
+              <h4 class="tituloCard">Projeto DATASSP-CONFIG</h4>
+              <p class="paragrafoCard">
+                Projeto complementar ao DATASSP, voltado à configuração de dados
+                disponibilizados na plataforma principal.
+              </p>
+            </a>
+          </card>
+        </div>
+      </div>
+    </section>
+    <section class="zona3">
+      <h4 class="title-section2">-- Contato</h4>
+      <div>
+        <h3 class="text-zona2">Meus Contatos</h3>
+        <div class="card-contato">
+          <div class="centro">
+            <div class="infoSite02">
+              <div class="infoContato">
+                <span class="material-symbols-outlined"> mail </span>
+                <div id="texto" class="fonte">hunter404paulo@gmail.com</div>
+                <button onclick="copiarTexto()" class="copiar">
+                  <span class="material-symbols-outlined"> content_copy </span>
+                </button>
+              </div>
+              <div class="infoContato">
+                <span class="material-symbols-outlined"> call </span>
+                <div id="texto" class="fonte">(89) 9 9401-7507</div>
+                <button onclick="copiarTexto()" class="copiar">
+                  <span class="material-symbols-outlined"> content_copy </span>
+                </button>
+              </div>
+              <div class="infoContato">
+                <span class="material-symbols-outlined"> location_on </span>
+                <div id="texto" class="fonte">Marcolândia - PI</div>
+              </div>
+            </div>
+          </div>
+          <div class="centro">
+            <div class="infoSite02">
+              <div class="infoContato">
+                <span class="material-symbols-outlined"> mail </span>
+                <div class="fonte">LinkedIn</div>
+                <a href="https://www.linkedin.com/in/paulo-henrique-5792ab274">
+                  <button class="copiar">
+                    <span class="material-symbols-outlined"> open_in_new </span>
+                  </button>
+                </a>
+              </div>
+              <div class="infoContato">
+                <span class="material-symbols-outlined"> call </span>
+                <div id="texto" class="fonte">GitHub</div>
+                <a href="https://github.com/PauloHenrique-UFPI">
+                  <button class="copiar">
+                    <span class="material-symbols-outlined"> open_in_new </span>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
+
+<script src="script.js"></script>

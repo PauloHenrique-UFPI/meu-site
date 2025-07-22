@@ -1,0 +1,278 @@
+html,
+body {
+  /* justify-content: center;
+  align-items: center; */
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-family: sans-serif, Calibri, Arial;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #737584;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  height: 50px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  margin-right: 35px;
+  font-family: "Lilita One", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links li {
+  margin-left: 1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+  position: relative;
+  padding-bottom: 4px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6px;
+  height: 6px;
+  background-color: #070707;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.nav-links a.active::after {
+  width: 100%;
+  height: 5px;
+  background-color: #e2ab5b;
+  border-radius: 0;
+  opacity: 1;
+}
+
+.nav-links a:hover {
+  color: #e2ab5b;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.zona1 {
+  background-color: #737584;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+  text-align: center;
+}
+
+.banner {
+  height: auto;
+  width: 100%;
+}
+
+.title-section {
+  text-align: left;
+  font-size: 18px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #5b5669;
+}
+
+.title-intro {
+  text-align: left;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #fff;
+}
+
+.subtitle {
+  text-align: left;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #5b5669;
+}
+
+.paragraph {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: justify;
+  color: #464646;
+}
+
+.zona2 {
+  background-color: #2d2e3d;
+  min-height: 400px;
+}
+
+.title-section2 {
+  text-align: left;
+  font-size: 18px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #5b5669;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #5b5669;
+  margin-left: 20px;
+}
+
+.text-zona2 {
+  text-align: center;
+  color: #fff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+}
+
+.paineis {
+  display: flex;
+
+  flex-wrap: wrap;
+  gap: 20px 10px;
+  justify-content: center;
+}
+
+.cardPainel {
+  justify-content: space-between;
+  background-color: #949ca4;
+  border: 1px solid #949ca4;
+  cursor: pointer;
+  border-radius: 8px;
+  max-width: 350px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: calc(25% - 20px);
+  min-height: 150px;
+  padding: 15px;
+  box-sizing: border-box;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-decoration: none;
+  color: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+.cardPainel:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  background-color: #e2ab5b;
+}
+
+.tituloCard {
+  text-align: left;
+  color: #fff;
+}
+
+.paragrafoCard {
+  text-align: justify;
+  color: #fff;
+}
+
+.zona3 {
+  background-color: #737584;
+  min-height: 400px;
+}
+
+.card-contato {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.centro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.infoContato {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  gap: 8px;
+  color: #fff;
+  font-size: 12px;
+}
+
+.copiar {
+  background-color: transparent;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.copiar:hover {
+  background-color: #e0e0e0;
+}
+
+.fonte {
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .cardPainel {
+    width: calc(90% - 20px);
+  }
+
+  .nav-links {
+    align-items: center;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 4.5rem;
+    right: -1rem;
+    background-color: #737584;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 0.5rem 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+  .zona1 {
+    grid-template-columns: 1fr;
+    gap: 0px;
+  }
+  .banner {
+    width: 85%;
+  }
+}
