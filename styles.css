@@ -119,6 +119,7 @@ body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-align: justify;
   color: #464646;
+  width: 95%;
 }
 
 .zona2 {
@@ -272,6 +273,14 @@ a {
     grid-template-columns: 1fr;
     gap: 0px;
   }
+
+  .card-contato {
+    grid-template-columns: 1fr;
+    gap: 0px;
+    align-items: center;
+    text-align: center;
+  }
+
   .banner {
     width: 85%;
   }
