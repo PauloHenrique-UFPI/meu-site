@@ -84,12 +84,12 @@ body {
 }
 
 .imagemCarro {
-  width: 90%;
+  width: 30%;
 }
 
 ul {
   width: 96vw;
-  height: 400px;
+  height: 500px;
   padding: 20px;
   display: flex;
   gap: 4vw;
@@ -212,6 +212,6 @@ li::scroll-marker:target-current {
     width: 80%;
   }
   .imagemCarro {
-    width: 100%;
+    width: 60%;
   }
 }
