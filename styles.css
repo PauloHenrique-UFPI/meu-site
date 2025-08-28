@@ -194,7 +194,72 @@ a {
 
 .zona3 {
   background-color: #737584;
-  min-height: 400px;
+}
+
+.card-tec {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  text-align: center;
+}
+
+.competencias {
+  background-color: #737584;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+}
+
+/* Cores personalizadas */
+.red {
+  background: #e53935;
+}
+.purple {
+  background: #8e24aa;
+}
+.green {
+  background: #43a047;
+}
+.pink {
+  background: #ec407a;
+}
+.orange {
+  background: #fb8c00;
+}
+.blue {
+  background: #1e88e5;
+}
+.yellow {
+  background: #fdd835;
+  color: #333;
+}
+.green-light {
+  background: #66bb6a;
+}
+
+.zona4 {
+  background-color: #2d2e3d;
+  min-height: 250px;
 }
 
 .card-contato {
@@ -206,10 +271,31 @@ a {
   gap: 20px;
 }
 
+.imagemCarro {
+  height: 100px;
+}
+
+.centroEsp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .centro {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.espaco {
+  margin-top: 10px;
+}
+
+.pulo {
+  margin-bottom: 30px;
+}
+.esp {
+  margin-right: 10px;
 }
 
 .infoContato {
@@ -244,6 +330,11 @@ a {
 @media (max-width: 768px) {
   .cardPainel {
     width: calc(90% - 20px);
+  }
+
+  .card-tec {
+    grid-template-columns: 1fr;
+    gap: 0px;
   }
 
   .nav-links {
@@ -283,5 +374,13 @@ a {
 
   .banner {
     width: 85%;
+  }
+
+  .centroEsp {
+    flex-direction: column;
+  }
+
+  .esp {
+    margin-bottom: 10px;
   }
 }
